@@ -1,0 +1,18 @@
+webapp:
+  build: .
+  ports:
+    - "80:80"
+  volumes:
+    - /jmboy/dev/:/var/www/
+    - ./config/php.ini:/etc/php5/apache2/conf.d/30-custom.ini
+    - ./config/fqdn:/etc/apache2/conf.d/fqdn
+    - ./sites:/etc/apache2/sites-enabled/
+
+  links:
+    - db:db
+
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+    DB_HOST: mysql
