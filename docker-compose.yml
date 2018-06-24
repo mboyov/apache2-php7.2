@@ -1,5 +1,5 @@
 webapp:
-  image: nutr4x/apache2-php7
+  image: nutr4x/apache2-php7.2
   ports:
     - "80:80"
   volumes:

@@ -1,6 +1,6 @@
 # Docker stack web by Nutr4x
 
-- DockerHub : [nutr4x/apache2-php7](https://hub.docker.com/r/nutr4x/apache2-php7/)
+- DockerHub : [nutr4x/apache2-php7.2](https://hub.docker.com/r/nutr4x/apache2-php7.2/)
  
 ## PHP applications on Apache
 
@@ -12,15 +12,15 @@
 
 ## Build
 
-To create the base image nutr4x/apache2-php7, execute the following command:
+To create the base image nutr4x/apache2-php7.2, execute the following command:
 
-docker build -t nutr4x/apache2-php7 .
+docker build -t nutr4x/apache2-php7.2 .
 
 Running your Apache and PHP docker image
 
 Start your image binding the external ports 80 in all interfaces to your container:
 
-docker run -d -p 80:80 nutr4x/apache2-php7
+docker run -d -p 80:80 nutr4x/apache2-php7.2
 
 ## Compose
 
