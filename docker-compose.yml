@@ -3,7 +3,7 @@ webapp:
   ports:
     - "80:80"
   volumes:
-    - /jmboy/dev/:/var/www/
+    - /var/www:/var/www
     - ./config/php.ini:/etc/php/7.2/apache2/conf.d/30-custom.ini
     - ./config/fqdn:/etc/apache2/conf.d/fqdn
     - ./sites:/etc/apache2/sites-enabled/
@@ -13,6 +13,8 @@ webapp:
 
 db:
   image: mariadb
+  volumes:
+    - ./db:/var/lib/mysql
   environment:
     MYSQL_ROOT_PASSWORD: root
     DB_HOST: mysql
