@@ -24,6 +24,6 @@ docker run -d -p 80:80 nutr4x/apache2-php7.2
 
 ## Compose
 
-In the docker-compose.yml file replace the volume line "/jmboy/dev/" with your working directory and execute the following command:
+In the docker-compose.yml file replace the volume line "/var/www" with your working directory and execute the following command:
 
 docker-compose up

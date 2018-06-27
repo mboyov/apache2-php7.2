@@ -13,8 +13,7 @@ services:
       - ./sites:/etc/apache2/sites-enabled/
 
   db:
-    image: mariadb
-    restart: always
+    image: mysql:5.7
     volumes:
       - ./db:/var/lib/mysql
     environment:
