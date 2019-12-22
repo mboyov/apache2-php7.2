@@ -1,6 +1,6 @@
 # Docker stack web by Nutr4x
 
-- DockerHub : [nutr4x/apache2-php7.2](https://hub.docker.com/r/nutr4x/apache2-php7.2/)
+- DockerHub : [mboyov/apache2-php7.2](https://hub.docker.com/r/nutr4x/apache2-php7.2/)
  
 ## PHP applications on Apache
 
