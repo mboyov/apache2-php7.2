@@ -1,4 +1,4 @@
-# Docker stack web by Nutr4x
+# Deprecated ! Docker stack web by Nutr4x
 
 - DockerHub : [arcadev/apache2-php7.2](https://hub.docker.com/repository/docker/arcadev/apache2-php7.2)
  
